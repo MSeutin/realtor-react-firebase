@@ -3,7 +3,6 @@ import { useLocation, useNavigate } from 'react-router-dom';
 export default function Header() {
     const location = useLocation();
     const navigate = useNavigate();
-    console.log(location);
     function pathMatchRoute(route){
         if(route === location.pathname){
             return true;
